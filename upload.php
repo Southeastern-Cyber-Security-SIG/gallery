@@ -5,7 +5,7 @@
   
 </head>
 <body>
-  <form enctype="multipart/form-data" action="index.php" method="POST">
+  <form enctype="multipart/form-data" action="upload.php" method="POST">
     <?php echo "<!--The flag is :   -->"; #flag{P3p_1s_0LD_DoNt_U331t} ?>
     <a href="./">Click here to see everyone's art</a>
     <p>OR</p>
