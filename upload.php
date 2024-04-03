@@ -73,6 +73,38 @@
     background-color: #333; 
     color: #fff;
   }
+
+  /* if I used the other button it messed up the banner so here we go */
+  .bottom-file-upload {
+    padding: 10px 20px;
+    background-color: #FF69B4; /* hot pink */
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-file-upload:hover {
+    background-color: #FF1493;
+}
+
+.bottom-submit {
+    display: block;
+    padding: 10px 20px;
+    background-color: #FF69B4; /* hot pink */
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.bottom-submit:hover {
+    background-color: #FF1493;
+}
 </style>
 </head>
 <body>
@@ -93,9 +125,13 @@
     <center>
       <br /> <br />
       <p>OR</p> <br />
-      <div class="title">Upload your own art work</div>
-    <input type="file" name="uploaded_file"></input><br /><br />
-    <input type="submit" value="Upload"></input>
+      <div class="title">Upload your own art work</div><br />
+      <label for="file-upload" class="bottom-file-upload">
+          <i class="fas fa-cloud-upload-alt"></i> Choose File
+      </label>
+      <input id="file-upload" type="file" name="uploaded_file" style="display: none;"></input>
+      <br /><br />
+      <button type="submit" class="bottom-submit">Upload</button>
     </center>
   </form>
 </body>
